@@ -17,3 +17,13 @@ $jumbotron-bg:               white;
 .navbar-brand {
      font-weight: bold;
 }
+
+.radio,
+.checkbox {
+  margin-left: 20px;
+}
+
+.radio label,
+.checkbox label {
+  padding-left: 0px;
+}
