@@ -7,30 +7,17 @@
     </div>
   </div>
   <div class="panel-body">
-    <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-
-      <div class="form-group">
-        <%= f.label :name %>
-        <%= f.text_field :email, class: "form-control", :autofocus => true, required: true %>
-      </div>
-
-      <div class="form-group">
-        <%= f.label :email %>
-        <%= f.email_field :email, class: "form-control", required: true %>
-      </div>
-
-      <div class="form-group">
-        <%= f.label :message %>
-        <%= f.text_box :message, class: "form-control", required: true %>
-      </div>
-
-      <div class="hidden">
-        <%= f.input :nickname, :hint => 'Leave this field blank!' %>
-      </div>
-
-      <div class="form-group">
-        <%= f.submit "Send message", class: "btn btn-primary" %>
-      </div>
-    <% end %>
-  </div>  
+  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+    <%= f.input :name, :required => true %>
+    <%= f.input :email, :required => true %>
+    <%= f.input :message, :as => :text, :required => true %>
+    <div class= "hidden">
+      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+    </div>
+    <div>
+      </br>
+      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>
 </div>
