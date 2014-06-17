@@ -14,6 +14,8 @@ gem 'masonry-rails', '~> 0.2.1'
 gem 'will_paginate', '~> 3.0.5'
 gem 'will_paginate-bootstrap'
 gem 'newrelic_rpm'
+gem 'mail_form'
+gem 'simple_form'
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do
