@@ -13,17 +13,17 @@
 
       <div class="form-group">
         <%= f.label :name %>
-        <%= f.text_field :name, class: "form-control", :autofocus => true, required: true %>
+        <%= f.input :name, class: "form-control", :autofocus => true, required: true %>
       </div>
 
       <div class="form-group">
         <%= f.label :email %>
-        <%= f.email_field :email, class: "form-control", required: true %>
+        <%= f.input :email, class: "form-control", required: true %>
       </div>
 
       <div class="form-group">
         <%= f.label :message %>
-        <%= f.text_box :message, class: "form-control", required: true %>
+        <%= f.input :message, class: "form-control", required: true %>
       </div>
 
       <div class="hidden">
