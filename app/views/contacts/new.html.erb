@@ -9,21 +9,21 @@
     </div>
   </div>
   <div class="panel-body">
-    <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+    <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
 
       <div class="form-group">
         <%= f.label :name %>
-        <%= f.input :email, class: "form-control", :autofocus => true, required: true %>
+        <%= f.text_field :name, class: "form-control", :autofocus => true, required: true %>
       </div>
 
       <div class="form-group">
         <%= f.label :email %>
-        <%= f.input :email, class: "form-control", required: true %>
+        <%= f.email_field :email, class: "form-control", required: true %>
       </div>
 
       <div class="form-group">
         <%= f.label :message %>
-        <%= f.input :message, class: "form-control", required: true %>
+        <%= f.text_field :message, class: "form-control", required: true %>
       </div>
 
       <div class="hidden">
