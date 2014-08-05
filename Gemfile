@@ -17,10 +17,15 @@ gem 'newrelic_rpm'
 gem 'mail_form'
 gem 'simple_form'
 
+gem 'ahoy_matey'
+gem 'groupdate'
+gem 'chartkick'
+
 # Use sqlite3 as the database for Active Record
 group :development, :test do
 	gem 'sqlite3'
 	gem 'foreman'
+	gem 'activeuuid', '>= 0.5.0'
 end
 
 group :production do
