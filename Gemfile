@@ -6,7 +6,7 @@ gem 'rails', '4.0.3'
 
 gem 'bootstrap-sass'
 
-gem 'devise', '~> 3.1.0rc2'
+gem 'devise', '~> 3.2.0'
 
 gem 'paperclip', '~> 3.0'
 gem 'aws-sdk', '~> 1.41.0'
@@ -20,6 +20,8 @@ gem 'simple_form'
 gem 'ahoy_matey'
 gem 'groupdate'
 gem 'chartkick'
+
+gem 'activeadmin', github: 'gregbell/active_admin'
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do
